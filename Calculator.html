@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/Calculator.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/Font Awesome/css/all.css"> <!--Font Awesome-->
+</head>
+<body>
+
+<div id="mode">
+	<button class="modeButton" id="normal">Normal</button>
+	<button class="modeButton" id="scientific">Scientific</button>
+</div>
+
+<div id="normalCalculator">
+	<div id="screen">
+		<input type="text" name="" class="screen">
+	</div>
+	<div id="buttons">
+		<button name="reset" class="button" value="reset">C</button>
+		<button name="openPar" class="button" value="(">(</button>
+		<button name="closedPar" class="button" value=")">)</button>
+		<button name="delete" class="button" value="delete"><i class="fas fa-backspace"></i></button>
+
+		<button name="1" class="button" value="1">1</button>
+		<button name="2" class="button" value="2">2</button>
+		<button name="3" class="button" value="3">3</button>
+		<button name="addition" class="button" value="+">+</button>
+
+		<button name="4" class="button" value="4">4</button>
+		<button name="5" class="button" value="5">5</button>
+		<button name="6" class="button" value="6">6</button>
+		<button name="substraction" class="button" value="-">-</button>
+
+		<button name="7" class="button" value="7">7</button>
+		<button name="8" class="button" value="8">8</button>
+		<button name="9" class="button" value="9">9</button>
+		<button name="multiplication" class="button" value="*">*</button>
+
+		<button name="0" class="button" value="0">0</button>
+		<button name="fPoint" class="button" value=".">.</button>
+		<button name="result" class="button" value="=">=</button>
+		<button name="division" class="button" value="/">/</button>
+	</div>
+</div>
+
+<div id="scientificCalculator">
+	<div id="screen">
+		<input type="text" name="" class="screen">
+	</div>
+	<div id="buttons">
+		<div id="switches">
+			<button class="button" id="shift">Shift</button>
+			<span></span>
+			<button class="button" id="rad">Rad</button>
+			<button class="button" id="deg">Deg</button>
+		</div>
+		<button name="factorial" class="button" value="factorial">x!</button>
+		<button name="modulo" class="button" value="%">%</button>
+		<button name="ans" class="button" value="ans">Ans</button>
+		<span></span>
+
+		<button name="reset" class="button" value="reset">C</button>
+		<button name="openPar" class="button" value="(">(</button>
+		<button name="closedPar" class="button" value=")">)</button>
+		<button name="delete" class="button" value="delete"><i class="fas fa-backspace"></i></button>
+		<!-- ROW -->
+
+		<button name="sine" class="button mainButton" value="sine">sin</button>
+		<button name="cosine" class="button mainButton" value="cosine">cos</button>
+		<button name="tangent" class="button mainButton" value="tangent">tan</button>
+
+		<button name="asine" class="button shiftButton" value="asine">sin<sup>-1</sup></button>
+		<button name="acosine" class="button shiftButton" value="acosine">cos<sup>-1</sup></button>
+		<button name="atangent" class="button shiftButton" value="atangent">tan<sup>-1</sup></button>
+		<span></span>
+
+		<button name="1" class="button" value="1">1</button>
+		<button name="2" class="button" value="2">2</button>
+		<button name="3" class="button" value="3">3</button>
+		<button name="addition" class="button" value="+">+</button>
+		<!-- ROW -->
+
+		<button name="logarithmN" class="button mainButton" value="logarithmN">ln</button>
+		<button name="logarithmD" class="button mainButton" value="logarithmD">log</button>
+		<button name="power" class="button mainButton" value="^">x<sup>y</sup></button>
+
+		<button name="exponential" class="button shiftButton" value="exponential">e<sup>x</sup></button>
+		<button name="power10" class="button shiftButton" value="power10">10<sup>x</sup></button>
+		<button name="nthRoot" class="button shiftButton" value="√"><sup>y</sup>√x</button>
+		<span></span>
+
+		<button name="4" class="button" value="4">4</button>
+		<button name="5" class="button" value="5">5</button>
+		<button name="6" class="button" value="6">6</button>
+		<button name="substraction" class="button" value="-">-</button>
+		<!-- ROW -->
+
+		<button name="inverse" class="button" value="inverse">1/x</button>
+		<button name="square" class="button mainButton" value="square">x<sup>2</sup></button>
+		<button name="cube" class="button mainButton" value="cube">x<sup>3</sup></button>
+
+		<button name="squareRoot" class="button shiftButton" value="squareRoot">√</button>
+		<button name="cubicRoot" class="button shiftButton" value="cubicRoot"><sup>3</sup>√</button>
+		<span></span>
+
+		<button name="7" class="button" value="7">7</button>
+		<button name="8" class="button" value="8">8</button>
+		<button name="9" class="button" value="9">9</button>
+		<button name="multiplication" class="button" value="*">*</button>
+		<!-- ROW -->
+
+		<button name="abs" class="button" value="absolute">|x|</button>
+		<button name="pi" class="button" value="pi">π</button>
+		<button name="exponentialE" class="button" value="exp">e</button>
+		<span></span>
+
+		<button name="0" class="button" value="0">0</button>
+		<button name="fPoint" class="button" value=".">.</button>
+		<button name="result" class="button" value="=">=</button>
+		<button name="division" class="button" value="/">/</button>
+	</div>
+</div>
+
+<script type="text/javascript" src="assets/js/lib/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="assets/js/Calculator.js"></script>
+
+</body>
+</html>

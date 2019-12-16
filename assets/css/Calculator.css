@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'ds-digitalbold';
+    src: url('ds-digib-webfont.woff2') format('woff2'),
+         url('ds-digib-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	background-color: #e0e0e0;
+	background-size: cover;
+}
+
+#scientificCalculator, #normalCalculator {
+	background: #424549;
+	border:	1px solid #aaaaaa;
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 150px;
+	text-align: center;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #494949;
+}
+
+#scientificCalculator {
+	display: none;
+	margin-top: 100px;
+	width: 550px;
+}
+
+#mode {
+	margin: 0 auto;
+	width: 250px;
+	text-align: center;
+}
+
+.screen {
+	font-family: 'ds-digitalbold';
+	font-size: 30px;
+	background: #bad3b8;
+	width: 90%;
+	height: 50px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	border: white;
+	padding: 15px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.button {
+	margin-top: 5%;
+	width: 22.5%;
+	height: 40px;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	border: white;
+	outline: none;
+}
+
+#scientificCalculator .button {
+	width: 12.85%;
+}
+
+#switches .button {
+	width: 15%;
+	background-color: #ff8c00;
+}
+
+.modeButton {
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 10px;
+	border: white;
+	outline: none;
+	width: 100px;
+	height: 40px;
+	background-color: #81a3e8;
+}
+
+.shiftButton {
+	display: none;
+}
+
+#scientificCalculator #switches span {
+	margin-left: 40%;
+}
+
+#scientificCalculator span {
+	margin-left: 2%;
+}
+
+sup {
+	vertical-align: top; 
+	font-size: 0.6em; 
+}
+
+button:hover {
+	background: #bab8b8;
+}
+
+button:active {
+	background: #a3a3a3;
+}
+
+.modeButton:hover {
+	background-color: #7391ce;
+}
+
+.switchesSelected {
+	background-color: #dd8533 !important; /*Because #switches .button is more specific*/
+}
+
+.modeSelected {
+	background-color: #7391ce;
+}
+
